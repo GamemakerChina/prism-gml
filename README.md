@@ -1,6 +1,10 @@
 # prism-gml
 GameMaker Language Highlighting with Prism.js
 
+## Usage
+
+Include the JS file into `prism.js` 
+
 ## Example
 
 ```html
