@@ -1,8 +1,6 @@
 Prism.languages.gamemakerlanguage = Prism.languages.gml = Prism.languages.extend('clike', {
 	'comment': {
-		pattern: /(^|[^\\])#(?:region.*|endregion)/,
-		lookbehind: true,
-		greedy: true
+		pattern: /(\/\/|#(?:region|endregion)|\/\*[\s\S]*?\*).*/
 	},
 	'number': /(?:\b0x[\da-f]+|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?)[ulf]*/i,
 	'keyword': /\b(?:if|else|switch|case|default|break|for|repeat|while|do|until|continue|exit|return|globalvar|var|enum|#macro|function|with|try|catch|static)\b/,
